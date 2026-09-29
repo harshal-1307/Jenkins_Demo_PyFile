@@ -2,10 +2,9 @@ pipeline
 {
   agent any 
 
-  parameter 
+  parameters 
   {
-    choice
-    (
+    choice(
       name: 'Environment'  ,
       choices: ['DEV', 'IUT/SIT','UAT','PROD']
       description: 'choose deplyoment environment'
