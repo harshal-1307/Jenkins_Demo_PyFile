@@ -1,0 +1,14 @@
+pipeline
+{
+  agent any 
+    stages 
+    {
+        stage('run python code')
+        {
+          steps
+            {
+            bat 'python pythonFile.py'
+            }
+        }
+    }
+}
