@@ -6,9 +6,9 @@ pipeline
   {
     choice
     (
-      name : 'Environment'  ,
-      choices : ['DEV', 'IUT/SIT','UAT','PROD']
-      description : 'choose deplyoment environment'
+      name: 'Environment'  ,
+      choices: ['DEV', 'IUT/SIT','UAT','PROD']
+      description: 'choose deplyoment environment'
     )
   }
 
