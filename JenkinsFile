@@ -1,14 +1,26 @@
 pipeline
 {
   agent any 
-    stages
+
+  parameter 
+  {
+    choice
+    (
+      name : 'Environment'  ,
+      choices : ['DEV', 'IUT/SIT','UAT','PROD']
+      description : 'choose deplyoment environment'
+    )
+  }
+
+  stages 
     {
-      stage('Run python file')
+      stage('Deploy')
         {
-        steps
+          stesp
           {
-          bat 'python pythonFile.py'
+              echo "Deploying to ${params.Environment}"
           }
         }
     }
 }
+
