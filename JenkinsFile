@@ -15,7 +15,7 @@ pipeline
     {
       stage('Deploy')
         {
-          stesp
+          steps
           {
               echo "Deploying to ${params.Environment}"
           }
